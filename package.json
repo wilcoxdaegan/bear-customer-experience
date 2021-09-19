@@ -1,0 +1,22 @@
+{
+  "name": "bear-customer-experience",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wilcoxdaegan/bear-customer-experience.git"
+  },
+  "author": "Daegan Wilcox",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wilcoxdaegan/bear-customer-experience/issues"
+  },
+  "homepage": "https://github.com/wilcoxdaegan/bear-customer-experience#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

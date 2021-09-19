@@ -9,6 +9,10 @@ app.get("/", function (req, res) { // when a person arrives at the main url + / 
     res.sendFile(__dirname + "/index.html"); // sends our html file in a static way
 });
 
+app.get("/daegan", function (req, res) {
+    res.sendFile(__dirname + "/daegan.html");
+})
+
 app.listen(port, function () { // this listens for the port, and essentially opens the app
     console.log("Listening!");
 });

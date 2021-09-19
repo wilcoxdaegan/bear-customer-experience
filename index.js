@@ -1,13 +1,15 @@
 const express = require('express');
-const app = express();
 
-const port = process.env.PORT || 3000;
 
-app.get("/", function (req, res) {
-    res.sendFile(__dirname + "/index.html");
+const app = express(); // creates APP, which is the main program
+
+const port = process.env.PORT || 3000; // process.env.PORT for heroku, 3000 for local
+
+app.get("/", function (req, res) { // when a person arrives at the main url + / (so, the home), it makes a request, and sends a response. 
+    res.sendFile(__dirname + "/index.html"); // sends our html file in a static way
 });
 
-app.listen(port, function () {
+app.listen(port, function () { // this listens for the port, and essentially opens the app
     console.log("Listening!");
 });
 

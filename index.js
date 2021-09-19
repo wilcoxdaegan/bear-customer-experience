@@ -14,6 +14,6 @@ app.get("/daegan", function (req, res) {
 })
 
 app.listen(port, function () { // this listens for the port, and essentially opens the app
-    console.log("Listening!");
+    console.log("Listening on " + port);
 });
 

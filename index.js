@@ -17,6 +17,10 @@ app.get("/nikha", function (req, res) {
     res.sendFile(__dirname + "/nikha.html");
 })
 
+app.post("/", function (req, res) {
+
+})
+
 app.get("/jake", function (req, res) {
     res.sendFile(__dirname + "/jake.html");
 })

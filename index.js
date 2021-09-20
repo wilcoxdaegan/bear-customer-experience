@@ -22,6 +22,8 @@ app.post("/", function (req, res) {
     var username = req.body.name;
 
     console.log(username);
+
+    res.send();
 })
 
 app.get("/jake", function (req, res) {

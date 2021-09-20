@@ -13,6 +13,10 @@ app.get("/daegan", function (req, res) {
     res.sendFile(__dirname + "/daegan.html");
 })
 
+app.get("/nikha", function (req, res) {
+    res.sendFile(__dirname + "/nikha.html");
+})
+
 app.listen(port, function () { // this listens for the port, and essentially opens the app
     console.log("Listening on port " + port);
 });

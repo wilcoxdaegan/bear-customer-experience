@@ -19,11 +19,9 @@ app.get("/nikha", function (req, res) {
 })
 
 app.post("/", function (req, res) {
-    var username = req.body.name;
+    var username = req.body.username;
 
     console.log(username);
-
-    res.send();
 })
 
 app.get("/jake", function (req, res) {

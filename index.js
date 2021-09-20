@@ -17,6 +17,11 @@ app.get("/nikha", function (req, res) {
     res.sendFile(__dirname + "/nikha.html");
 })
 
+app.get("/jake", function (req, res) {
+    res.sendFile(__dirname + "/jake.html");
+})
+
+
 app.listen(port, function () { // this listens for the port, and essentially opens the app
     console.log("Listening on port " + port);
 });

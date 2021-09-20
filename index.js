@@ -1,4 +1,7 @@
 const express = require('express');
+const bodyParser = require('body-parser');
+
+app.use(bodyParser.urlencoded({ extended: true }));
 
 
 const app = express(); // creates APP, which is the main program
@@ -18,7 +21,7 @@ app.get("/nikha", function (req, res) {
 })
 
 app.post("/", function (req, res) {
-
+    res.send("<h1>" + req.body.name + "</h1>");
 })
 
 app.get("/jake", function (req, res) {

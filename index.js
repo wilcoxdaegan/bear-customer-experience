@@ -2,7 +2,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 const app = express(); // creates APP, which is the main program
+app.use(express.static(__dirname + '/public'));
+
 app.use(bodyParser.urlencoded({ extended: true }));
+
 
 const port = process.env.PORT || 3000; // process.env.PORT for heroku, 3000 for local
 

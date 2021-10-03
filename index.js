@@ -16,6 +16,10 @@ app.get("/private", function (req, res) { // when a person arrives at the main u
     res.sendFile(__dirname + "/private.html"); // sends our html file in a static way
 });
 
+app.get("/forum", function (req, res) {
+    res.sendFile(__dirname + "/forum.html")
+})
+
 app.get("/daegan", function (req, res) {
     res.sendFile(__dirname + "/daegan.html");
 })

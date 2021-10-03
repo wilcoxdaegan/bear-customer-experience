@@ -13,19 +13,27 @@ app.get("/", function (req, res) {
 })
 
 app.get("/private", function (req, res) { // when a person arrives at the main url + / (so, the home), it makes a request, and sends a response. 
-    res.sendFile(__dirname + "/private.html"); // sends our html file in a static way
+    res.sendFile(__dirname + "/html/private.html"); // sends our html file in a static way
 });
 
 app.get("/forum", function (req, res) {
-    res.sendFile(__dirname + "/forum.html")
+    res.sendFile(__dirname + "/html/forum.html")
+})
+
+app.get("/purchase", function (req, res) {
+    res.sendFile(__dirname + "/html/purchase.html")
 })
 
 app.get("/daegan", function (req, res) {
-    res.sendFile(__dirname + "/daegan.html");
+    res.sendFile(__dirname + "/html/daegan.html");
 })
 
 app.get("/nikha", function (req, res) {
-    res.sendFile(__dirname + "/nikha.html");
+    res.sendFile(__dirname + "/html/nikha.html");
+})
+
+app.get("/jake", function (req, res) {
+    res.sendFile(__dirname + "/html/jake.html");
 })
 
 app.post("/", function (req, res) {
@@ -35,11 +43,6 @@ app.post("/", function (req, res) {
 
     res.send("<h1>" + username + "</h1>");
 })
-
-app.get("/jake", function (req, res) {
-    res.sendFile(__dirname + "/jake.html");
-})
-
 
 app.listen(port, function () { // this listens for the port, and essentially opens the app
     console.log("Listening on port " + port);

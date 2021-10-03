@@ -3,7 +3,6 @@ const bodyParser = require('body-parser');
 
 const app = express(); // creates APP, which is the main program
 app.use(express.static(__dirname + '/public'));
-
 app.use(bodyParser.urlencoded({ extended: true }));
 
 

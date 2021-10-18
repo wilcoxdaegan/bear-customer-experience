@@ -43,6 +43,19 @@ app.post("/", function (req, res) {
     res.send("<h1>" + username + "</h1>");
 });
 
+app.post("/forumsignup", function (req, res) {
+    // var username = req.body.username;
+    // var email = req.body.email;
+    // var password = req.body.email;
+    res.send("<h1> here </h1>")
+
+    // res.write("<h1>" + username + "</h1>");
+    // res.write("<h1>" + password + "</h1>");
+    // res.write("<h1>" + email + "</h1>");
+
+    // res.end();
+});
+
 // app.post("/contact", function (req, res) {
 //     var username = req.body.username;
 

@@ -43,11 +43,15 @@ app.post("/", function (req, res) {
     res.send("<h1>" + username + "</h1>");
 });
 
+app.get("/forumsignup", function (req, res) {
+    res.sendFile(__dirname + "/index.html");
+});
+
 app.post("/forumsignup", function (req, res) {
-    // var username = req.body.username;
+    var username = req.body.username;
     // var email = req.body.email;
     // var password = req.body.email;
-    res.send("<h1> here </h1>")
+    res.send("<h1> here </h1>");
 
     // res.write("<h1>" + username + "</h1>");
     // res.write("<h1>" + password + "</h1>");

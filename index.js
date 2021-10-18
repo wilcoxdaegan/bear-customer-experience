@@ -5,7 +5,6 @@ const app = express(); // creates APP, which is the main program
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-
 const port = process.env.PORT || 3000; // process.env.PORT for heroku, 3000 for local
 
 app.get("/", function (req, res) {
@@ -17,24 +16,24 @@ app.get("/private", function (req, res) { // when a person arrives at the main u
 });
 
 app.get("/forum", function (req, res) {
-    res.sendFile(__dirname + "/html/forum.html")
-})
+    res.sendFile(__dirname + "/html/forum.html");
+});
 
 app.get("/purchase", function (req, res) {
-    res.sendFile(__dirname + "/html/purchase.html")
-})
+    res.sendFile(__dirname + "/html/purchase.html");
+});
 
 app.get("/daegan", function (req, res) {
     res.sendFile(__dirname + "/html/daegan.html");
-})
+});
 
 app.get("/nikha", function (req, res) {
     res.sendFile(__dirname + "/html/nikha.html");
-})
+});
 
 app.get("/jake", function (req, res) {
     res.sendFile(__dirname + "/html/jake.html");
-})
+});
 
 app.post("/", function (req, res) {
     var username = req.body.username;
@@ -42,7 +41,15 @@ app.post("/", function (req, res) {
     console.log(username);
 
     res.send("<h1>" + username + "</h1>");
-})
+});
+
+// app.post("/contact", function (req, res) {
+//     var username = req.body.username;
+
+//     console.log(username);
+
+//     res.send("<h1>" + username + "</h1>");
+// });
 
 app.listen(port, function () { // this listens for the port, and essentially opens the app
     console.log("Listening on port " + port);

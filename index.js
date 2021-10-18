@@ -43,30 +43,28 @@ app.post("/", function (req, res) {
     res.send("<h1>" + username + "</h1>");
 });
 
-app.get("/forumsignup", function (req, res) {
-    res.sendFile(__dirname + "/index.html");
-});
-
 app.post("/forumsignup", function (req, res) {
     var username = req.body.username;
-    // var email = req.body.email;
-    // var password = req.body.email;
-    res.send("<h1> here </h1>");
+    var email = req.body.email;
+    var password = req.body.password;
 
-    // res.write("<h1>" + username + "</h1>");
-    // res.write("<h1>" + password + "</h1>");
-    // res.write("<h1>" + email + "</h1>");
+    res.write("<h1>" + username + "</h1>");
+    res.write("<h1>" + password + "</h1>");
+    res.write("<h1>" + email + "</h1>");
 
-    // res.end();
+    res.end();
 });
 
-// app.post("/contact", function (req, res) {
-//     var username = req.body.username;
+app.post("/forumlogin", function (req, res) {
+    // var username = req.body.username;
+    var email = req.body.email;
+    var password = req.body.password;
 
-//     console.log(username);
+    res.write("<h1>" + email + "</h1>");
+    res.write("<h1>" + password + "</h1>");
 
-//     res.send("<h1>" + username + "</h1>");
-// });
+    res.end();
+});
 
 app.listen(port, function () { // this listens for the port, and essentially opens the app
     console.log("Listening on port " + port);

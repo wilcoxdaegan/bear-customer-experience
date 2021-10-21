@@ -236,6 +236,7 @@ sup {
 }
 
 #nav-forum {
+  margin-bottom: .5rem;
   border: solid 1px white;
 }
 
@@ -4083,6 +4084,7 @@ textarea.form-control-lg {
 .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;
+  text-align: center;
 }
 .navbar-nav .dropdown-menu {
   position: static;
